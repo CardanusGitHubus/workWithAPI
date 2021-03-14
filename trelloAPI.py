@@ -67,11 +67,9 @@ def move_card(name, column_name):
     task_id = None
     for column in column_data:
         column_tasks = requests.get(base_url.format('lists') + '/' + column['id'] + '/cards', params=auth_params).json()
-        print('column_tasks', column_tasks)
         for task in column_tasks:
             if task['name'] == name:
                 tasks.append([task['id'], task['name'], column['name']])
-    print('tasks', tasks)
     # Различное поведение функции при нахождении одной задачи, нескольких задач, или при отсутствии искомой задачи
     if len(tasks) == 0:
         print('Ошибка: такой задачи нет')
@@ -83,7 +81,6 @@ def move_card(name, column_name):
             print('\t' + str(idx + 1) + '. ' + task[1] + ' | Колонка: ', task[2])
         task_idx = int(input())
         task_id = tasks[task_idx - 1][0]
-        print('task_id', task_id)
 
     # Теперь, когда у нас есть id задачи, которую мы хотим переместить
     # Переберём данные обо всех колонках, пока не найдём ту, в которую мы будем перемещать задачу
@@ -102,11 +99,9 @@ def delete_card(name):
     task_id = None
     for column in column_data:
         column_tasks = requests.get(base_url.format('lists') + '/' + column['id'] + '/cards', params=auth_params).json()
-        print('column_tasks', column_tasks)
         for task in column_tasks:
             if task['name'] == name:
                 tasks.append([task['id'], task['name'], column['name']])
-    print('tasks', tasks)
     if len(tasks) == 0:
         print('Ошибка: такой задачи нет')
     elif len(tasks) == 1:
