@@ -10,8 +10,8 @@ KEY = 'Your Trello Key'
 TOKEN = 'Your Trello Token'
 
 COMMANDS:
-Read a data: python trelloAPI.py 
-Create a new card in given list: python trelloAPI.py create_card "Card name" "List name" 
-Create a new list: python trelloAPI.py create_list "List name" 
-Move a card from one list to another: python trelloAPI.py move_card "Card name" "List name" 
-Delete a card: python trelloAPI.py delete_card "Card name" 
+1. Read a data: python trelloAPI.py 
+2. Create a new card in given list: python trelloAPI.py create_card "Card name" "List name" 
+3. Create a new list: python trelloAPI.py create_list "List name" 
+4. Move a card from one list to another: python trelloAPI.py move_card "Card name" "List name" 
+5. Delete a card: python trelloAPI.py delete_card "Card name" 
