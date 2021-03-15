@@ -1,6 +1,14 @@
 # workWithAPI
 This is my CLI client for Trello.
 
+Установка пакетов в вашу virtual environment:
+pip install -r requirements.txt (Если используете PyCharm, откройте проект с файлом requirements.txt, 
+нажмите "install requirements" в появившейся строке вверху экрана)
+
+Installing packages into your virtual environment:
+pip install -r requirements.txt (If you use PyCharm, open a project with the requirements file specified, 
+a notification bar is displayed on top of any Python or requirements file opened in Editor)
+
 ВНИМАНИЕ: Перед запуском скрипта создайте в корневой директории файл auth_params.py с переменными
 KEY = 'Ваш Trello ключ'
 TOKEN = 'Ваш Trello токен'
