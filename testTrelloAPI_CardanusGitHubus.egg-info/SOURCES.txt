@@ -1,0 +1,6 @@
+README.md
+setup.py
+testTrelloAPI_CardanusGitHubus.egg-info/PKG-INFO
+testTrelloAPI_CardanusGitHubus.egg-info/SOURCES.txt
+testTrelloAPI_CardanusGitHubus.egg-info/dependency_links.txt
+testTrelloAPI_CardanusGitHubus.egg-info/top_level.txt
